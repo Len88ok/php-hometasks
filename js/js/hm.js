@@ -13,12 +13,12 @@ for (var i = 0; i <= m; i++){
 var arr1 = [];
 for (var i = 0; i < arr.length; i++) {
 		for (var j = 0; j <= arr.length; j++){
-			if  (arr[i][j] % 2 == 0) {
+			if  (arr[i][j] % 2 == 0 && arr[i][j] != 0) {
 			arr1.push(arr[i][j]);
 		}
 	}
 }
-/*console.log(arr1)*/
+// console.log(arr1)
 
 // Вывести все нечётные элементы массива arr
 var arr2 = [];
