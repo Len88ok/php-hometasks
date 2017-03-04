@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script src="js/class.js"></script> -->
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	 <script src="js/home.js"></script>
+	 <style>
+	 	.hide{
+	 		opacity: 0;
+	 		transition: opacity .3s linear;
+	 	}
+	 	.op{
+	 		opacity: 1;
+	 	}
+	 </style>
+</head>
+<body style="background-image: url(white_brick_wall.png); background-repeat: repeat; padding: 2%; width: 80%; margin: 0 auto;">
+<!-- <div class="home">
+<h1>1</h1>
+<p>Создать на странице 5 абзаца (p) и при помощи jQuery покрасить 3-ий в зелёный, 2-й в красный (background)</p>
+<p>Создать на странице 5 абзаца (p) и при помощи jQuery покрасить 3-ий в зелёный, 2-й в красный (background)</p>
+<p>Создать на странице 5 абзаца (p) и при помощи jQuery покрасить 3-ий в зелёный, 2-й в красный (background)</p>
+<p>Создать на странице 5 абзаца (p) и при помощи jQuery покрасить 3-ий в зелёный, 2-й в красный (background)</p>
+<p>Создать на странице 5 абзаца (p) и при помощи jQuery покрасить 3-ий в зелёный, 2-й в красный (background)</p>
+
+<button id="res1">Результат1</button>
+
+<h1>2</h1>
+ <!-- Создать на странице список из 5-10 элементов с числовыми значениями. При помощи jQuery найти сумму элементов списка -->
+ <!-- <ul>
+ 	<li class="lishka">1</li>
+ 	<li class="lishka">2</li>
+ 	<li class="lishka">3</li>
+ 	<li class="lishka">4</li>
+ 	<li class="lishka">5</li>
+ 	<li class="lishka">6</li>
+ 	<li class="lishka">7</li>
+ </ul>
+
+ <button id="res2">Результат2</button>
+
+<h1>3</h1>
+ Создать форму регистрации (First name, last name, login, password, email, comment). Получить значение всех полей и записать в js массив. (поле comment не инпутом, а <textarea></textarea>)
+ <form action="#">
+ 	<label for="#first">First name</label><br>
+ 	<input id="first" type="text" value="first name"><br>
+ 	<label for="#last">Last name</label><br>
+ 	<input id="last" type="text" value="last name"><br>
+ 	<label for="#login">Login</label><br>
+ 	<input id="login" type="text" value="login"><br>
+ 	<label for="#pass">Password</label><br>
+ 	<input id="pass" type="password" value="password"><br>
+ 	<label for="#email">Email</label><br>
+ 	<input id="email" type="email" value="email"><br>
+ 	<label for="#comment">Comment</label><br>
+ 	<textarea id="comment" cols="30" rows="10">comment</textarea>
+ </form>
+ <button id="res3">Результат3</button>
+
+<h1 class="fourth">4</h1>  
+<button id="res4">Результат4</button>
+ 
+<h1>5</h1>
+ <!-- Добавить два input type number на страницу. При вводе значения в первый инпут, во втором отображается квадрат значения первого -->
+ <!-- <input id="log" onkeyup="duble.value = this.value" type="number" ><br>
+ <input id="duble" onkeyup="log.value = this.value" type="number"><br>
+
+ <h1>6</h1>
+<input id="check" type="checkbox">
+<p class="hide">Show me</p>
+</div>
+<!-- <div class="class">
+<input type="number" id="number">
+<select name="cursies" id="cursies">
+	<option value="27.3">usd</option>
+	<option value="29.5">eur</option>
+	<option value="0.48">rur</option>
+</select>
+<h1 class="res7"></h1>
+
+
+
+<input type="number" id="now">
+<input type="number" id="before">
+<input type="number" id="diff" disabled>
+<input type="number" id="res10" disabled>
+
+</div> -->
+
+
+
+<div class="home2">
+<h1>1</h1>
+	<input type="number" id="num1">
+	 <button id="num1-res">Результат</button>
+	 <p id="text1">Инпут, кнопка и 5 абзацев. При вводе в инпут цифры от 1 до 5 после нажатия на кнопку - подсветить соответствующий абзац.</p>
+	 <p id="text2">Инпут, кнопка и 5 абзацев. При вводе в инпут цифры от 1 до 5 после нажатия на кнопку - подсветить соответствующий абзац.</p>
+	 <p id="text3">Инпут, кнопка и 5 абзацев. При вводе в инпут цифры от 1 до 5 после нажатия на кнопку - подсветить соответствующий абзац.</p>
+	 <p id="text4">Инпут, кнопка и 5 абзацев. При вводе в инпут цифры от 1 до 5 после нажатия на кнопку - подсветить соответствующий абзац.</p>
+	 <p id="text5">Инпут, кнопка и 5 абзацев. При вводе в инпут цифры от 1 до 5 после нажатия на кнопку - подсветить соответствующий абзац.</p>
+<h1>2 - Конвертер длинны - метры в см, км, дециметр</h1>
+<input type="number" id="num2">
+<select name="length" id="length">
+	<option value="100">СМ</option>
+	<option value="10">ДМ</option>
+	<option value="0.001">КМ</option>	
+</select>
+<input type="number" id="num2-res" disabled>
+
+<h1>3 - Конвертёр длины - метры в футы, дюймы, ярды</h1>
+<input type="number" id="num3">
+<select name="length2" id="length2">
+	<option value="3.28083">Фут</option>
+	<option value="39.3701">Дюйм</option>
+	<option value="1.09361">Ярд</option>	
+</select>
+<input type="number" id="num3-res" disabled>
+
+	<h1> Мини-клавиатура для цифр - при помощи кнопок и текстового поля реализовать простую клавиатуру (цифры 0-9, знак "-" и пробел)</h1>
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>
